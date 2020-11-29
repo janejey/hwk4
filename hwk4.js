@@ -46,18 +46,28 @@
 // console.log(filterRange([100, 200, 300], 9, 23))
 
 
-// //4 it's half done, because I'm very tired(
-// function telnum (num) {
-//   let result = 'Bad number';
-//   for (let i = 0; i < num.length; i++) {
-//     if (num.length === 11 && num[0] === '+' ) {
-//       result = num.substring(1)
-//     } else if (num.length === 10) {
-//       result = num
-//     }
-//       }return result}
+// //4
+// function numberValidate(phone_number){
+//   if ( phone_number.split("+").length-1 > 1 || phone_number[0] !== '+' ) {
+//    console.log("Bad number");
+//     return false;
+//    }
+//    if(phone_number[0] === '+'){
+//     phone_number = phone_number.substring(1);
+//    }
+//     phone_number = phone_number.split(" ").join('');
+//  if ( phone_number.length > 10 || phone_number.length < 10) {
+//     console.log("Bad number")
+//      return false;
+//   }
+//  if ( phone_number.length === 10 ) {
+//   console.log(phone_number);
+//   return false;
+//  }
+// console.log(phone_number)
+// }
+// numberValidate("9765439");
 
-// console.log(telnum('+0008909562'))
 
 // //5
 // function repeat(str1, str2) {
